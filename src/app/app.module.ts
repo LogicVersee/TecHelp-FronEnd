@@ -9,13 +9,20 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import { SearchTechnicalComponent } from './views/search-technical/search-technical.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import {MatSidenavModule} from "@angular/material/sidenav";
+import { SideNavToolBarComponent } from './components/side-nav-tool-bar/side-nav-tool-bar.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import {MatCardModule} from "@angular/material/card";
+import {MatGridListModule} from "@angular/material/grid-list";
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     SearchTechnicalComponent,
-    SidebarComponent
+    SidebarComponent,
+    SideNavToolBarComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +30,11 @@ import {MatSidenavModule} from "@angular/material/sidenav";
     BrowserAnimationsModule,
     MatToolbarModule,
     MatSidenavModule,
+    MatButtonModule,
+    MatIconModule,
+    MatListModule,
+    MatCardModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
