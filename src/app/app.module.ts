@@ -37,7 +37,8 @@ import {HttpClientModule} from "@angular/common/http";
     MatListModule,
     MatCardModule,
     MatGridListModule,
-    HttpClientModule
+    HttpClientModule,
+    MatIconModule
   ],
   providers: [TechnicalsServiceService],
   bootstrap: [AppComponent]

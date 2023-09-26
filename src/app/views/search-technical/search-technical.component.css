@@ -15,7 +15,10 @@
   display: flex;
 }
 
-
+.title{
+  padding-left: 40px;
+  padding-top: 20px;
+}
 .content{
   min-width: 200px;
   padding-right: 30px;
