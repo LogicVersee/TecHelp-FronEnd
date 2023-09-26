@@ -17,6 +17,7 @@ import {MatCardModule} from "@angular/material/card";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {TechnicalsServiceService} from "./services/technicals-service.service";
 import {HttpClientModule} from "@angular/common/http";
+import { TechProfileComponent } from './views/tech-profile/tech-profile.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {HttpClientModule} from "@angular/common/http";
     ToolbarComponent,
     SearchTechnicalComponent,
     SidebarComponent,
-    SideNavToolBarComponent
+    SideNavToolBarComponent,
+    TechProfileComponent
   ],
   imports: [
     BrowserModule,
