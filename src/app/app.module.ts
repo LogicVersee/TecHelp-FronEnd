@@ -22,6 +22,8 @@ import { RequestComponent } from './components/request/request.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import { TechProfileComponent } from './views/tech-profile/tech-profile.component';
+import { HomeComponent } from './home/home.component';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,11 @@ import { TechProfileComponent } from './views/tech-profile/tech-profile.componen
     SearchTechnicalComponent,
     SidebarComponent,
     SideNavToolBarComponent,
-    TechProfileComponent
+    TechProfileComponent,
+    ToolbarComponent,
+
+    NavigationComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +61,15 @@ import { TechProfileComponent } from './views/tech-profile/tech-profile.componen
     MatCardModule,
     MatGridListModule,
     HttpClientModule,
-    MatIconModule
+    MatIconModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule
   ],
   providers: [TechnicalsServiceService],
   bootstrap: [AppComponent]
