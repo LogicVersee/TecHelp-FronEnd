@@ -8,8 +8,8 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 })
 export class RequestComponent implements OnInit {
 
-  // @ts-ignore
-  public formrequest : FormGroup;
+
+  public formrequest : FormGroup = new FormGroup({});
   constructor(private formBuilder: FormBuilder) {
 
   }
