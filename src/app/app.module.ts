@@ -21,6 +21,7 @@ import { MatListModule } from '@angular/material/list';
 import { RequestComponent } from './components/request/request.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import {MatFormFieldModule} from "@angular/material/form-field";
+import { TechProfileComponent } from './views/tech-profile/tech-profile.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {MatFormFieldModule} from "@angular/material/form-field";
     ToolbarComponent,
     SearchTechnicalComponent,
     SidebarComponent,
-    SideNavToolBarComponent
+    SideNavToolBarComponent,
+    TechProfileComponent
   ],
   imports: [
     BrowserModule,
