@@ -40,7 +40,7 @@ import { TechProfileComponent } from './views/tech-profile/tech-profile.componen
     MatCardModule,
     MatGridListModule,
     HttpClientModule,
-    MatIconModule
+    MatIconModule,
   ],
   providers: [TechnicalsServiceService],
   bootstrap: [AppComponent]
