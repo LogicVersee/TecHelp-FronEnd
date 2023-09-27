@@ -22,7 +22,7 @@ import { RequestComponent } from './components/request/request.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import { TechProfileComponent } from './views/tech-profile/tech-profile.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './components/home/home.component';
 import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
