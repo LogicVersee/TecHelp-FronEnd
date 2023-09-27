@@ -8,19 +8,26 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { SearchTechnicalComponent } from './views/search-technical/search-technical.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
-import {MatSidenavModule} from "@angular/material/sidenav";
 import { SideNavToolBarComponent } from './components/side-nav-tool-bar/side-nav-tool-bar.component';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
 import {MatCardModule} from "@angular/material/card";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {TechnicalsServiceService} from "./services/technicals-service.service";
 import {HttpClientModule} from "@angular/common/http";
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { RequestComponent } from './components/request/request.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import {MatFormFieldModule} from "@angular/material/form-field";
 
 @NgModule({
   declarations: [
     AppComponent,
+    ToolbarComponent,
+    NavigationComponent,
+    RequestComponent,
     ToolbarComponent,
     SearchTechnicalComponent,
     SidebarComponent,
@@ -30,6 +37,14 @@ import {HttpClientModule} from "@angular/common/http";
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+
     MatToolbarModule,
     MatSidenavModule,
     MatButtonModule,
