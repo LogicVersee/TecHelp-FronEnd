@@ -23,6 +23,30 @@
       "description": "Soy tecnico desde hace 4 años y tengo un puesto en La Victoria",
       "ranking": "4",
       "favourite": "false"
+    },
+    {
+      "id": 3,
+      "name": "Goku",
+      "lastName": "Lujan Carrion",
+      "address": "Av. Cocos 345",
+      "city": "Lima",
+      "experience": "2 - 4 years",
+      "photo":"https://depor.com/resizer/25quKBxP8Ti7cjCcmnR887FHER0=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/DAYT2F5NUNB7VPAFKUPHNDXVQA.jpg",
+      "description": "I deliver my costumer devices early",
+      "ranking": "5",
+      "favourite": "false"
+    },
+    {
+      "id": 4,
+      "name": "Marco",
+      "lastName": "Torres",
+      "address": "Av. Manzanos 345",
+      "city": "Lima",
+      "experience": "2 - 4 years",
+      "photo":"https://img.wattpad.com/cover/270106124-288-k461693.jpg",
+      "description": "I'm new in repairing phones, but I always deliver early'",
+      "ranking": "2",
+      "favourite": "false"
     }
   ]
 }
