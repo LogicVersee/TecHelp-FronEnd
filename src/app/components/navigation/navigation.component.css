@@ -1,7 +1,5 @@
 .sidenav-container {
   height: 100%;
-
-
 }
 
 .sidenav {
@@ -31,4 +29,8 @@
 
 .sidenav .menu {
   margin-top: 20px;
+}
+
+span.mdc-list-item__content{
+  text-align: left;
 }

@@ -36,7 +36,7 @@
         <textarea  class="form-control" type="text" id="Specification"  rows="4" formControlName="Specification" ></textarea>
       </div><br>
       <div class="a">
-        <button [disabled]="formrequest.invalid" >Send Request</button>
+        <button [routerLink]="'/home'" [disabled]="formrequest.invalid" >Send Request</button>
       </div>
     </div>
   </form>
