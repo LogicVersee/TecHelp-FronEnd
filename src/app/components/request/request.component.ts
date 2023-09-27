@@ -7,15 +7,27 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
   styleUrls: ['./request.component.css']
 })
 export class RequestComponent implements OnInit {
-public formrequest: FormGroup;
-constructor(private formBuilder: FormBuilder) {}
-ngOnInit(){
+
+  // @ts-ignore
+  public formrequest : FormGroup;
+  constructor(private formBuilder: FormBuilder) {
+
+  }
+
+
+
+  ngOnInit(){
   this.formrequest=this.formBuilder.group({
     name:['',[Validators.required,Validators.name]],
-    number:['',Validators.required]
+    number:['',Validators.required, Validators.minLength(9)],
+    day:['',Validators.required],
+    hour:['',Validators.required],
+    cellphone:['',Validators.required],
+    Problem:['',Validators.required, Validators.requiredTrue],
+    Specification:['',Validators.required]
   });
-}
-send():any{
+  }
+  send():any{
   console.log(this.formrequest.value);
-}
+  }
 }
