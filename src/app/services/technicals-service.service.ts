@@ -5,7 +5,7 @@ import {HttpClient, HttpHeaders} from "@angular/common/http";
   providedIn: 'root'
 })
 export class TechnicalsServiceService {
-  baseUrl: string = 'http://localhost:3000';
+  baseUrl: string = 'https://my-json-server.typicode.com/GioRC0/TechHelpDB';
   resourceEndpoint: string = '/technicals';
 
   httpOptions = {

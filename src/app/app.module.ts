@@ -24,6 +24,7 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import { TechProfileComponent } from './views/tech-profile/tech-profile.component';
 import { HomeComponent } from './components/home/home.component';
 import { MatMenuModule } from '@angular/material/menu';
+import {MembershipModule} from "./Brayan/membership.module";
 
 @NgModule({
   declarations: [
@@ -69,7 +70,9 @@ import { MatMenuModule } from '@angular/material/menu';
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+
+    MembershipModule
   ],
   providers: [TechnicalsServiceService],
   bootstrap: [AppComponent]
