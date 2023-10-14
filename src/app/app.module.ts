@@ -24,6 +24,11 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import { TechProfileComponent } from './views/tech-profile/tech-profile.component';
 import { HomeComponent } from './components/home/home.component';
 import { MatMenuModule } from '@angular/material/menu';
+import {AnalyticsComponent} from "./views/analytics/analytics.component";
+import {DashboardComponent} from "./views/dashboard/dashboard.component";
+import {InventoryComponent} from "./views/inventory/inventory.component";
+import { ChartComponent } from './components/chart/chart.component';
+
 
 @NgModule({
   declarations: [
@@ -39,7 +44,11 @@ import { MatMenuModule } from '@angular/material/menu';
     ToolbarComponent,
 
     NavigationComponent,
-    HomeComponent
+    HomeComponent,
+    AnalyticsComponent,
+    DashboardComponent,
+    InventoryComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,
