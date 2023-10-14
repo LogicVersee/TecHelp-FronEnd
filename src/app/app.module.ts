@@ -28,6 +28,7 @@ import {AnalyticsComponent} from "./views/analytics/analytics.component";
 import {DashboardComponent} from "./views/dashboard/dashboard.component";
 import {InventoryComponent} from "./views/inventory/inventory.component";
 import { ChartComponent } from './components/chart/chart.component';
+import {ChartModule} from "angular-highcharts";
 
 
 @NgModule({
@@ -78,7 +79,8 @@ import { ChartComponent } from './components/chart/chart.component';
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    ChartModule
   ],
   providers: [TechnicalsServiceService],
   bootstrap: [AppComponent]
