@@ -6,6 +6,7 @@ import {HomeComponent} from "./components/home/home.component";
 import {RequestComponent} from "./components/request/request.component";
 import {DashboardComponent} from "./views/dashboard/dashboard.component";
 import {AnalyticsComponent} from "./views/analytics/analytics.component";
+import {InventoryComponent} from "./views/inventory/inventory.component";
 
 const routes: Routes = [
   {path: 'searchTechnicals', component: SearchTechnicalComponent},
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path: 'techProfile/:id', component: TechProfileComponent},
   {path: 'request', component: RequestComponent},
   {path: 'dashboard', component: DashboardComponent},
-  {path: 'dashboard/analytics', component: AnalyticsComponent}
+  {path: 'dashboard/analytics', component: AnalyticsComponent},
+  {path: 'dashboard/inventory', component: InventoryComponent}
 ];
 
 @NgModule({

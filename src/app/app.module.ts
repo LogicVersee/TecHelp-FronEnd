@@ -19,7 +19,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { RequestComponent } from './components/request/request.component';
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import { TechProfileComponent } from './views/tech-profile/tech-profile.component';
 import { HomeComponent } from './components/home/home.component';
@@ -29,6 +29,8 @@ import {DashboardComponent} from "./views/dashboard/dashboard.component";
 import {InventoryComponent} from "./views/inventory/inventory.component";
 import { ChartComponent } from './components/chart/chart.component';
 import {ChartModule} from "angular-highcharts";
+import {InventoryServiceService} from "./services/inventoryService/inventory-service.service";
+import {MatInputModule} from "@angular/material/input";
 
 
 @NgModule({
@@ -62,7 +64,6 @@ import {ChartModule} from "angular-highcharts";
     MatListModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-
     MatToolbarModule,
     MatSidenavModule,
     MatButtonModule,
@@ -80,9 +81,11 @@ import {ChartModule} from "angular-highcharts";
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
-    ChartModule
+    ChartModule,
+    MatInputModule,
+    FormsModule
   ],
-  providers: [TechnicalsServiceService],
+  providers: [TechnicalsServiceService,InventoryServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

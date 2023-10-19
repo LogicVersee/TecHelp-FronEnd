@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Chart} from "angular-highcharts";
 import {TechnicalsServiceService} from "../../services/technicals-service.service";
 

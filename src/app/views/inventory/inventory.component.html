@@ -1,1 +1,18 @@
 <p>inventory works!</p>
+<div class="example-container">
+    <form (submit)="onSubmit()">
+        <div *ngFor="let itm of items; let i = index">
+            <mat-form-field>
+                <input matInput name="sdf" [value]="itm.item" (input)="updateItemValue($event, item.item, i)">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="number" name="amount" [value]="itm.amount.toString()" (input)="updateAmountValue($event, item.amount, i)" >
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="number" name="price" [value]="itm.price.toString()" (input)="updatePriceValue($event, item.price, i)">
+            </mat-form-field>
+        </div>
+        <button mat-raised-button (click)="onAdd()">Add item</button>
+        <button mat-raised-button type="submit">Save</button>
+    </form>
+</div>
