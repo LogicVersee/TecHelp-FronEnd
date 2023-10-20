@@ -25,6 +25,7 @@ import { TechProfileComponent } from './views/tech-profile/tech-profile.componen
 import { HomeComponent } from './components/home/home.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
+import { MyProfileComponent } from './views/my-profile/my-profile.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { EditProfileComponent } from './components/edit-profile/edit-profile.com
 
     NavigationComponent,
     HomeComponent,
-    EditProfileComponent
+    EditProfileComponent,
+    MyProfileComponent
   ],
   imports: [
     BrowserModule,
