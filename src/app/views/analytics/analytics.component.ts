@@ -14,6 +14,7 @@ export class AnalyticsComponent implements OnInit{
   income?:Number ;
   outlay?:Number;
   earning?:Number;
+  weekend:Number = 1;
   constructor(private technicalsService: TechnicalsServiceService) {
 
   }
@@ -45,6 +46,7 @@ export class AnalyticsComponent implements OnInit{
               events: {
                 click: (event:any) => {
                   console.log(event.point.category)
+                  this.weekend = event.point.category;
                   this.income = this.incomesPerWeekend[(event.point.category)];
                   this.outlay = 20.0;
                   this.earning = Number(this.income) - Number(this.outlay);
