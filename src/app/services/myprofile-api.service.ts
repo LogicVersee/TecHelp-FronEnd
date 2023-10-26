@@ -6,7 +6,7 @@ import { throwError, Observable } from 'rxjs'; // Importa throwError
   providedIn: 'root'
 })
 export class MyprofileApiService {
-  baseUrl: string = 'http://localhost:3000';
+  baseUrl: string = 'https://my-json-server.typicode.com/Yorusito/TecHelp';
   resourceEndpoint: string = '/my-profile';
 
   httpOptions = {
