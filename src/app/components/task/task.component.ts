@@ -1,6 +1,9 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {Task} from "../../interfaces/task";
 import {MatTableDataSource} from "@angular/material/table";
+import {MatPaginator} from "@angular/material/paginator";
+import {MatSort} from "@angular/material/sort";
+import {TaskService} from "../../services/task.service";
 
 
 
@@ -11,22 +14,35 @@ import {MatTableDataSource} from "@angular/material/table";
 })
 export class TaskComponent implements OnInit{
 
-  listTask: Task[] = [
-    {id: 1, name: 'Luis', cellphone: 'Motorola', problem: 'crash', element: 'batery', income:'60'},
-    {id: 2, name: 'Sandra', cellphone: 'Motorola', problem: 'crash', element: 'batery', income:'40'},
-  ];
-
+  listTask: Task[]=[];
 
   displayedColumns: string[] = ['id', 'name', 'cellphone', 'date','action'];
-  dataSource = new MatTableDataSource(this.listTask);
-
-  constructor() {
+  dataSource!:MatTableDataSource<any>
+  @ViewChild(MatPaginator) paginator!: MatPaginator;
+  @ViewChild(MatSort) sort!: MatSort;
+  constructor(private _taskService: TaskService) {
   }
 
   ngOnInit() {
+    this.chargeTask();
+  }
+
+  chargeTask(){
+    this.listTask=this._taskService.getTask();
+    this.dataSource=new MatTableDataSource(this.listTask)
+  }
+  ngAfterViewInit() {
+    this.dataSource.paginator = this.paginator;
+    this.dataSource.sort = this.sort;
   }
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
+
+  eliminateTask(index:number){
+    console.log(index);
+    this._taskService.eliminateTask(index);
+    this.chargeTask();
   }
 }
