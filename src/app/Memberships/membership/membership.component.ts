@@ -2,9 +2,9 @@ import {Component, OnInit, Output} from '@angular/core';
 import {MatDialog} from "@angular/material/dialog";
 import {DialogBoxComponent} from "./components/dialog-box/dialog-box.component"
 import {MembershipService} from "./service/membership.service";
-import {memberships} from "./interface/memberships";
+import {memberships} from "./entities/memberships";
 import { Router } from '@angular/router';
-import {Subscription} from "./interface/Subscription"
+import {Subscription} from "./entities/Subscription"
 
 
 @Component({

@@ -4,8 +4,8 @@ import {SearchTechnicalComponent} from "./views/search-technical/search-technica
 import {TechProfileComponent} from "./views/tech-profile/tech-profile.component";
 import {HomeComponent} from "./components/home/home.component";
 import {RequestComponent} from "./components/request/request.component";
-import {MembershipComponent} from "./Brayan/membership/membership.component";
-import {LoadingComponent} from "./Brayan/membership/page/loading/loading.component";
+import {MembershipComponent} from "./Memberships/membership/membership.component";
+import {LoadingComponent} from "./Memberships/membership/page/loading/loading.component";
 
 const routes: Routes = [
   {path: 'searchTechnicals', component: SearchTechnicalComponent},

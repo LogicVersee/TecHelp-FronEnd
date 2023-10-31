@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {memberships} from "../interface/memberships";
+import {memberships} from "../entities/memberships";
 import {Observable} from "rxjs";
-import {Subscription} from "../interface/Subscription";
+import {Subscription} from "../entities/Subscription";
 
 @Injectable({
   providedIn: 'root'
