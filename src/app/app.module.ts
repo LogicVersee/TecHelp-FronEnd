@@ -7,7 +7,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { SearchTechnicalComponent } from './views/search-technical/search-technical.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { SideNavToolBarComponent } from './components/side-nav-tool-bar/side-nav-tool-bar.component';
 import {MatCardModule} from "@angular/material/card";
 import {MatGridListModule} from "@angular/material/grid-list";
@@ -58,7 +57,6 @@ import {MonitortasksService} from "./monitoring/services/monitortasks.service";
     RequestComponent,
     ToolbarComponent,
     SearchTechnicalComponent,
-    SidebarComponent,
     SideNavToolBarComponent,
     TechProfileComponent,
     ToolbarComponent,

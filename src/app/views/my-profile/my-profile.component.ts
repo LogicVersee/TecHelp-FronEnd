@@ -30,6 +30,10 @@ export class MyProfileComponent implements OnInit {
     this.router.navigate(['/edit-profile', tech.id]);
   }
 
+  beAMember(){
+    this.router.navigate(['/user/Membership']);
+  }
+
   ngOnInit(): void {
     this.getAllTechnicals();
   }

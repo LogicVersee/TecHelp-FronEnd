@@ -11,7 +11,7 @@ export class LoadingComponent {
   constructor(private router: Router) {  }
 
     ReturnPage():void{
-      this.router.navigate(['home']);
+      this.router.navigate(['myProfile']);
 
     }
 }
