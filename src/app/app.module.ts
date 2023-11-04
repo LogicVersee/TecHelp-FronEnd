@@ -34,14 +34,14 @@ import { CreateTaskComponent } from './components/task/create-task/create-task.c
 import {MatSelectModule} from "@angular/material/select";
 import {MatLegacyChipsModule} from "@angular/material/legacy-chips";
 import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
-import { ViewTaskComponent } from './components/task/view-task/view-task.component';
-import { EditTaskComponent } from './components/task/edit-task/edit-task.component';
+
+
 import { TasksComponent } from './tasking/pages/tasks/tasks.component';
 import {TasksService} from "./tasking/services/tasks.service";
 import { TaskFormComponent } from './tasking/components/task-form/task-form.component';
-import { CreateTasksComponent } from './tasking/pages/create-tasks/create-tasks.component';
+
 import { ViewTasksComponent } from './tasking/pages/view-tasks/view-tasks.component';
-import { EditTasksComponent } from './tasking/pages/edit-tasks/edit-tasks.component';
+
 
 
 
@@ -61,13 +61,10 @@ import { EditTasksComponent } from './tasking/pages/edit-tasks/edit-tasks.compon
     HomeComponent,
     TaskComponent,
     CreateTaskComponent,
-    ViewTaskComponent,
-    EditTaskComponent,
     TasksComponent,
     TaskFormComponent,
-    CreateTasksComponent,
     ViewTasksComponent,
-    EditTasksComponent
+
   ],
   imports: [
     BrowserModule,
