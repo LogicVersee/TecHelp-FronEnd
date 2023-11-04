@@ -24,6 +24,8 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import { TechProfileComponent } from './views/tech-profile/tech-profile.component';
 import { HomeComponent } from './components/home/home.component';
 import { MatMenuModule } from '@angular/material/menu';
+import { LoginComponent } from './security/pages/login/login.component';
+import { SignUpComponent } from './security/pages/sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { MatMenuModule } from '@angular/material/menu';
     ToolbarComponent,
 
     NavigationComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
