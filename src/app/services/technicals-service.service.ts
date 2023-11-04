@@ -23,6 +23,10 @@ export class TechnicalsServiceService {
     return this.http.get(`${this.resourcePath()}/${id}`, this.httpOptions);
   }
 
+  getIncomes(id:string){
+    return this.http.get<any[]>(`${this.baseUrl}/incomes/${id}`,this.httpOptions);
+  }
+
   private resourcePath(): string {
     return `${this.baseUrl}${this.resourceEndpoint}`;
   }

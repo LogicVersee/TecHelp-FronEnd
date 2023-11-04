@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -34,9 +35,13 @@ import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 import { TasksComponent } from './tasking/pages/tasks/tasks.component';
 import {TasksService} from "./tasking/services/tasks.service";
 import { TaskFormComponent } from './tasking/components/task-form/task-form.component';
-
 import { ViewTasksComponent } from './tasking/pages/view-tasks/view-tasks.component';
-
+import {AnalyticsComponent} from "./views/analytics/analytics.component";
+import {DashboardComponent} from "./views/dashboard/dashboard.component";
+import {InventoryComponent} from "./views/inventory/inventory.component";
+import { ChartComponent } from './components/chart/chart.component';
+import {ChartModule} from "angular-highcharts";
+import {InventoryServiceService} from "./services/inventoryService/inventory-service.service";
 
 
 
@@ -52,12 +57,18 @@ import { ViewTasksComponent } from './tasking/pages/view-tasks/view-tasks.compon
     SideNavToolBarComponent,
     TechProfileComponent,
     ToolbarComponent,
+
     NavigationComponent,
     HomeComponent,
     TasksComponent,
     TaskFormComponent,
     ViewTasksComponent,
-
+    NavigationComponent,
+    HomeComponent,
+    AnalyticsComponent,
+    DashboardComponent,
+    InventoryComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,
@@ -95,9 +106,11 @@ import { ViewTasksComponent } from './tasking/pages/view-tasks/view-tasks.compon
     MatSelectModule,
     MatLegacyChipsModule,
     MatProgressSpinnerModule,
-    FormsModule
+    FormsModule,
+    MatMenuModule,
+    ChartModule
   ],
-  providers: [TechnicalsServiceService,TasksService],
+  providers: [TechnicalsServiceService,TasksService,InventoryServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
