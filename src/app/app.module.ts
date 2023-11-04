@@ -26,6 +26,7 @@ import { HomeComponent } from './components/home/home.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { LoginComponent } from './security/pages/login/login.component';
 import { SignUpComponent } from './security/pages/sign-up/sign-up.component';
+import { PageNotFoundComponent } from './shared/pages/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { SignUpComponent } from './security/pages/sign-up/sign-up.component';
     NavigationComponent,
     HomeComponent,
     LoginComponent,
-    SignUpComponent
+    SignUpComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
