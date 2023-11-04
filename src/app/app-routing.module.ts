@@ -15,6 +15,9 @@ import {MembershipComponent} from "./Memberships/membership/membership.component
 import {LoadingComponent} from "./Memberships/membership/page/loading/loading.component";
 import {ViewProgressTaskComponent} from "./monitoring/pages/view-progress-task/view-progress-task.component";
 import {ListTaskComponent} from "./monitoring/pages/list-task/list-task.component";
+import {LoginComponent} from "./security/pages/login/login.component";
+import {PageNotFoundComponent} from "./shared/pages/page-not-found/page-not-found.component";
+import {SignUpComponent} from "./security/pages/sign-up/sign-up.component";
 
 const routes: Routes = [
   {path: 'searchTechnicals', component: SearchTechnicalComponent},
@@ -33,7 +36,12 @@ const routes: Routes = [
   {path: 'user/Membership',component: MembershipComponent},
   {path: 'loading', component: LoadingComponent},
   {path: 'viewprogresstask/:id',component:ViewProgressTaskComponent},
-  {path:'progress',component:ListTaskComponent}
+  {path:'progress',component:ListTaskComponent},
+  {path: 'error404', component: PageNotFoundComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'signup', component: SignUpComponent},
+
+  {path: '**', redirectTo: 'error404', pathMatch: 'full'}
 ];
 
 @NgModule({

@@ -47,7 +47,18 @@ import {MembershipModule} from "./Memberships/membership.module";
 import { ListTaskComponent } from './monitoring/pages/list-task/list-task.component';
 import { ViewProgressTaskComponent } from './monitoring/pages/view-progress-task/view-progress-task.component';
 import {MonitortasksService} from "./monitoring/services/monitortasks.service";
-
+import { LoginComponent } from './security/pages/login/login.component';
+import { SignUpComponent } from './security/pages/sign-up/sign-up.component';
+import { PageNotFoundComponent } from './shared/pages/page-not-found/page-not-found.component';
+import {UserService} from "./security/service/user.service";
+import {TechnicalService} from "./security/service/tecnhical.service";
+import {MatDividerModule} from "@angular/material/divider";
+import {MatBadgeModule} from "@angular/material/badge";
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import {MatDatepickerModule} from "@angular/material/datepicker";
+import {MatNativeDateModule} from "@angular/material/core";
+import {MatProgressBarModule} from "@angular/material/progress-bar";
+import {NgOptimizedImage} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -75,12 +86,18 @@ import {MonitortasksService} from "./monitoring/services/monitortasks.service";
     EditProfileComponent,
     MyProfileComponent,
     ListTaskComponent,
-    ViewProgressTaskComponent
+    ViewProgressTaskComponent,
+    LoginComponent,
+    SignUpComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
+
+
     MatToolbarModule,
     MatButtonModule,
     MatSidenavModule,
@@ -116,9 +133,19 @@ import {MonitortasksService} from "./monitoring/services/monitortasks.service";
     FormsModule,
     MatMenuModule,
     ChartModule,
-    MembershipModule
+    MembershipModule,
+    MatSortModule,
+    MatDividerModule,
+    MatTooltipModule,
+    MatBadgeModule,
+    MatCheckboxModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatSelectModule,
+    MatProgressBarModule,
+    NgOptimizedImage
   ],
-  providers: [TechnicalsServiceService,TasksService,InventoryServiceService,MonitortasksService],
+  providers: [TechnicalsServiceService,TasksService,InventoryServiceService,MonitortasksService,UserService, TechnicalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
