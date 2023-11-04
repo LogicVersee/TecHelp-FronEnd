@@ -6,7 +6,7 @@ import {HttpClient} from "@angular/common/http";
 @Injectable({
   providedIn: 'root'
 })
-export class TecnhicalService extends BaseService<Technical>{
+export class TechnicalService extends BaseService<Technical>{
 
   endPoint = '/technical';
 

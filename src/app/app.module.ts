@@ -19,7 +19,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { RequestComponent } from './components/request/request.component';
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import { TechProfileComponent } from './views/tech-profile/tech-profile.component';
 import { HomeComponent } from './components/home/home.component';
@@ -28,7 +28,18 @@ import { LoginComponent } from './security/pages/login/login.component';
 import { SignUpComponent } from './security/pages/sign-up/sign-up.component';
 import { PageNotFoundComponent } from './shared/pages/page-not-found/page-not-found.component';
 import {UserService} from "./security/service/user.service";
-import {TecnhicalService} from "./security/service/tecnhical.service";
+import {TechnicalService} from "./security/service/tecnhical.service";
+import {MatSortModule} from "@angular/material/sort";
+import {MatDividerModule} from "@angular/material/divider";
+import {MatTooltipModule} from "@angular/material/tooltip";
+import {MatBadgeModule} from "@angular/material/badge";
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import {MatDatepickerModule} from "@angular/material/datepicker";
+import {MatNativeDateModule} from "@angular/material/core";
+import {MatSelectModule} from "@angular/material/select";
+import {MatProgressBarModule} from "@angular/material/progress-bar";
+import {NgOptimizedImage} from "@angular/common";
+
 
 @NgModule({
   declarations: [
@@ -80,9 +91,22 @@ import {TecnhicalService} from "./security/service/tecnhical.service";
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+
+
+    FormsModule,
+    MatSortModule,
+    MatDividerModule,
+    MatTooltipModule,
+    MatBadgeModule,
+    MatCheckboxModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatSelectModule,
+    MatProgressBarModule,
+    NgOptimizedImage
   ],
-  providers: [TechnicalsServiceService, UserService, TecnhicalService],
+  providers: [TechnicalsServiceService, UserService, TechnicalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
