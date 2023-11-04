@@ -15,16 +15,16 @@ export class HomeComponent {
     map(({ matches }) => {
       if (matches) {
         return [
-          { title: 'Technical', cols: 1, rows: 1 },
-          { title: 'Inbox', cols: 1, rows: 1 },
-          { title: 'Progress', cols: 2, rows: 2 },
+          { title: 'DashBoard', cols: 1, rows: 1 , route: '/dashboard'},
+          { title: 'Petition', cols: 1, rows: 1 ,route: '/home'},
+          { title: 'Task', cols: 2, rows: 2 , route: '/task'},
         ];
       }
 
       return [
-        { title: 'Technical', cols: 1, rows: 1 },
-        { title: 'Inbox', cols: 1, rows: 1 },
-        { title: 'Progress', cols: 2, rows: 2 },
+        { title: 'DashBoard', cols: 1, rows: 1 , route: '/dashboard'},
+        { title: 'Petition', cols: 1, rows: 1 ,route: '/home'},
+        { title: 'Task', cols: 2, rows: 2 , route: '/task'},
 
       ];
     })

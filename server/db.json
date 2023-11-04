@@ -1,4 +1,43 @@
 {
+  "users": [
+    {
+      "id": 1,
+      "email": "gonzalo@techelp.com",
+      "password": "gonzalo",
+      "type": "client"
+    },
+    {
+      "id": 2,
+      "email": "juan@techelp.com",
+      "password": "juan",
+      "type": "client"
+    },
+    {
+      "id": 3,
+      "email": "pedro@techelp.com",
+      "password": "pedro",
+      "type": "client"
+    },
+    {
+      "id": 4,
+      "email": "alonso@techelp.com",
+      "password": "alonso",
+      "type": "technical"
+    },
+    {
+      "id": 5,
+      "email": "rafael@techelp.com",
+      "password": "rafael",
+      "type": "technical"
+    },
+    {
+      "id": 6,
+      "email": "mariana@techelp.com",
+      "password": "mariana",
+      "type": "technical"
+    }
+  ],
+
   "technicals": [
     {
       "id": 1,
@@ -47,6 +86,62 @@
       "description": "I'm new in repairing phones, but I always deliver early'",
       "ranking": "2",
       "favourite": "false"
+    }
+  ],
+  "incomes": [
+    {
+      "id": 1,
+      "incomePerWeekend": [56.70,45.80,12.90,13.40,100.90,70.20]
+    },
+    {
+      "id": 2,
+      "incomePerWeekend": [56.70,45.80,12.90,13.40,100.90,70.20]
+    },
+    {
+      "id": 3,
+      "incomePerWeekend": [56.70,45.80,12.90,13.40,100.90,70.20]
+    },
+    {
+      "id": 4,
+      "incomePerWeekend": [56.70,45.80,12.90,13.40,100.90,70.20]
+    }
+  ],
+  "inventories": [
+    {
+      "id": 1,
+      "technicalId": 1,
+      "items": [
+        {
+          "item": "Screens motoG20",
+          "amount": 10,
+          "price": 20.00
+        },
+        {
+          "item": "Battery Samsung A22",
+          "amount": 2,
+          "price": 45.00
+        },
+        {
+          "item": "Panel Samsung A22",
+          "amount": 5,
+          "price": 30.00
+        }
+      ]
+    }
+  ],
+  "my-profile": [
+    {
+      "id": 1,
+      "name": "Jos",
+      "lastName": "Cueva",
+      "address": "Av. San Juan",
+      "city": "Lima",
+      "experience": "4 - 5 years",
+      "photo": "https://elcomercio.pe/resizer/Fiioo9mqCbjvpsD_5GFUBW3YwP8=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/URN565XOQVC5HGNYPHOSPOZALA.jpg",
+      "description": "Soy tecnico desde hace 5 años",
+      "ranking": "5",
+      "favourite": "false",
+      "price": "50"
     }
   ]
 }
