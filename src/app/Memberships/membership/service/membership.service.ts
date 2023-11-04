@@ -9,7 +9,7 @@ import {Subscription} from "../entities/Subscription";
 })
 export class MembershipService {
 
-   private ServiceUrl: string = 'http://localhost:3000';
+   private ServiceUrl: string = 'https://my-json-server.typicode.com/GioRC0/TechHelpDB';
 
 
   constructor(private http: HttpClient) { }
