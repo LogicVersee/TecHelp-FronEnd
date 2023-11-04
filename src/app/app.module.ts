@@ -27,6 +27,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { LoginComponent } from './security/pages/login/login.component';
 import { SignUpComponent } from './security/pages/sign-up/sign-up.component';
 import { PageNotFoundComponent } from './shared/pages/page-not-found/page-not-found.component';
+import {UserService} from "./security/service/user.service";
+import {TecnhicalService} from "./security/service/tecnhical.service";
 
 @NgModule({
   declarations: [
@@ -51,6 +53,9 @@ import { PageNotFoundComponent } from './shared/pages/page-not-found/page-not-fo
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
+
+
     MatToolbarModule,
     MatButtonModule,
     MatSidenavModule,
@@ -77,7 +82,7 @@ import { PageNotFoundComponent } from './shared/pages/page-not-found/page-not-fo
     MatCardModule,
     MatMenuModule
   ],
-  providers: [TechnicalsServiceService],
+  providers: [TechnicalsServiceService, UserService, TecnhicalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
