@@ -11,6 +11,8 @@ import {AnalyticsComponent} from "./views/analytics/analytics.component";
 import {InventoryComponent} from "./views/inventory/inventory.component";
 import {EditProfileComponent} from "./components/edit-profile/edit-profile.component";
 import {MyProfileComponent} from "./views/my-profile/my-profile.component";
+import {ViewProgressTaskComponent} from "./monitoring/pages/view-progress-task/view-progress-task.component";
+import {ListTaskComponent} from "./monitoring/pages/list-task/list-task.component";
 
 const routes: Routes = [
   {path: 'searchTechnicals', component: SearchTechnicalComponent},
@@ -26,6 +28,8 @@ const routes: Routes = [
   {path: 'dashboard/inventory', component: InventoryComponent},
   {path: 'myProfile', component: MyProfileComponent},
   {path: 'edit-profile/:id', component: EditProfileComponent},
+  {path: 'viewprogresstask/:id',component:ViewProgressTaskComponent},
+  {path:'progress',component:ListTaskComponent}
 ];
 
 @NgModule({
