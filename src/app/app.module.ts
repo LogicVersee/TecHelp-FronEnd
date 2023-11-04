@@ -59,6 +59,8 @@ import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatNativeDateModule} from "@angular/material/core";
 import {MatProgressBarModule} from "@angular/material/progress-bar";
 import {NgOptimizedImage} from "@angular/common";
+import {HomeUserComponent} from "./components/home-user/home-user.component";
+
 
 @NgModule({
   declarations: [
@@ -89,7 +91,8 @@ import {NgOptimizedImage} from "@angular/common";
     ViewProgressTaskComponent,
     LoginComponent,
     SignUpComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    HomeUserComponent,
   ],
   imports: [
     BrowserModule,

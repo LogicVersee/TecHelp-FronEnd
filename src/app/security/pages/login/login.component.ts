@@ -42,8 +42,8 @@ export class LoginComponent implements OnInit{
   }
 
   submitForm(){
-    this.usersService.getAll1().subscribe((response: { content: any[]; })=>{
-      const user = response.content.find((a: any)=> {
+    this.usersService.getAll1().subscribe((response: any)=>{
+      const user = response.find((a: any)=> {
         this.currentUser = a;
         return a.email === this.loginForm.value.email &&
           a.password === this.loginForm.value.password
@@ -51,7 +51,7 @@ export class LoginComponent implements OnInit{
 
 
       if(user) {
-
+      console.log(user)
         sessionStorage.setItem("userId", this.currentUser.id.toString());
 
         this.loginForm.reset();
@@ -61,7 +61,10 @@ export class LoginComponent implements OnInit{
             sessionStorage.setItem("typeId", response.id.toString());
           });
 
-          this.router.navigate(['home-technical']).then(r => console.log(r));
+          this.router.navigate(['home']).then(r => console.log(r));
+        }
+        else {
+          this.router.navigate(['homeUser']).then(r => console.log(r));
         }
       }
     })

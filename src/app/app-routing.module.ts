@@ -18,11 +18,12 @@ import {ListTaskComponent} from "./monitoring/pages/list-task/list-task.componen
 import {LoginComponent} from "./security/pages/login/login.component";
 import {PageNotFoundComponent} from "./shared/pages/page-not-found/page-not-found.component";
 import {SignUpComponent} from "./security/pages/sign-up/sign-up.component";
+import {HomeUserComponent} from "./components/home-user/home-user.component";
 
 const routes: Routes = [
   {path: 'searchTechnicals', component: SearchTechnicalComponent},
   {path: 'home', component: HomeComponent},
-  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  {path: '', redirectTo: 'login', pathMatch: 'full'},
   {path: 'techProfile/:id', component: TechProfileComponent},
   {path: 'request', component: RequestComponent},
   {path: 'task', component: TasksComponent},
@@ -40,7 +41,7 @@ const routes: Routes = [
   {path: 'error404', component: PageNotFoundComponent},
   {path: 'login', component: LoginComponent},
   {path: 'signup', component: SignUpComponent},
-
+  {path: 'homeUser', component: HomeUserComponent},
   {path: '**', redirectTo: 'error404', pathMatch: 'full'}
 ];
 

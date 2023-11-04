@@ -5,8 +5,8 @@
                [opened]="(isHandset$ | async) === false">
     <h3 class="menu">Menu</h3>
     <mat-nav-list >
-      <ng-container *ngIf="type === 1; else elseBlock">
-      <a mat-list-item [routerLink]="'/home'"><mat-icon>home</mat-icon>Home</a>
+      <ng-container *ngIf="type; else elseBlock">
+      <a mat-list-item [routerLink]="'/homeUser'"><mat-icon>home</mat-icon>Home</a>
       <a mat-list-item [routerLink]="'/searchTechnicals'"><mat-icon>build</mat-icon>Technical</a>
       <a mat-list-item [routerLink]="'/progress'"><mat-icon>access_time</mat-icon>Progress</a>
       </ng-container>
@@ -19,7 +19,7 @@
       </ng-template>
     </mat-nav-list>
     <mat-nav-list class="mat-nav-list">
-      <a mat-list-item (click)="technician()" >Log Out</a>
+      <a mat-list-item [routerLink]="'/login'" >Log Out</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
