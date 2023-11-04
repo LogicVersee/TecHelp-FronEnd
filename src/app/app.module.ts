@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -25,17 +24,13 @@ import { TechProfileComponent } from './views/tech-profile/tech-profile.componen
 import { HomeComponent } from './components/home/home.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTableModule} from "@angular/material/table";
-import { TaskComponent} from "./components/task/task.component";
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { MatInputModule} from "@angular/material/input";
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
-import { CreateTaskComponent } from './components/task/create-task/create-task.component';
 import {MatSelectModule} from "@angular/material/select";
 import {MatLegacyChipsModule} from "@angular/material/legacy-chips";
 import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
-
-
 import { TasksComponent } from './tasking/pages/tasks/tasks.component';
 import {TasksService} from "./tasking/services/tasks.service";
 import { TaskFormComponent } from './tasking/components/task-form/task-form.component';
@@ -59,8 +54,6 @@ import { ViewTasksComponent } from './tasking/pages/view-tasks/view-tasks.compon
     ToolbarComponent,
     NavigationComponent,
     HomeComponent,
-    TaskComponent,
-    CreateTaskComponent,
     TasksComponent,
     TaskFormComponent,
     ViewTasksComponent,

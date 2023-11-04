@@ -6,7 +6,7 @@ import {catchError, Observable, retry, throwError} from "rxjs";
 })
 export class BaseService<T> {
 
-    baseUrl: string ='http://localhost:3000';
+    baseUrl: string ='https://my-json-server.typicode.com/Mirroy25/TechHelpTaskDb';
     resourceEndpoint: string ='/resources';
 
     httpOptions = {
