@@ -9,6 +9,8 @@ import {ViewTasksComponent} from "./tasking/pages/view-tasks/view-tasks.componen
 import {DashboardComponent} from "./views/dashboard/dashboard.component";
 import {AnalyticsComponent} from "./views/analytics/analytics.component";
 import {InventoryComponent} from "./views/inventory/inventory.component";
+import {EditProfileComponent} from "./components/edit-profile/edit-profile.component";
+import {MyProfileComponent} from "./views/my-profile/my-profile.component";
 
 const routes: Routes = [
   {path: 'searchTechnicals', component: SearchTechnicalComponent},
@@ -21,7 +23,9 @@ const routes: Routes = [
   {path: 'request', component: RequestComponent},
   {path: 'dashboard', component: DashboardComponent},
   {path: 'dashboard/analytics', component: AnalyticsComponent},
-  {path: 'dashboard/inventory', component: InventoryComponent}
+  {path: 'dashboard/inventory', component: InventoryComponent},
+  {path: 'myProfile', component: MyProfileComponent},
+  {path: 'edit-profile/:id', component: EditProfileComponent},
 ];
 
 @NgModule({

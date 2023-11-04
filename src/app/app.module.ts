@@ -42,7 +42,8 @@ import {InventoryComponent} from "./views/inventory/inventory.component";
 import { ChartComponent } from './components/chart/chart.component';
 import {ChartModule} from "angular-highcharts";
 import {InventoryServiceService} from "./services/inventoryService/inventory-service.service";
-
+import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
+import { MyProfileComponent } from './views/my-profile/my-profile.component';
 
 
 @NgModule({
@@ -68,7 +69,9 @@ import {InventoryServiceService} from "./services/inventoryService/inventory-ser
     AnalyticsComponent,
     DashboardComponent,
     InventoryComponent,
-    ChartComponent
+    ChartComponent,
+    EditProfileComponent,
+    MyProfileComponent
   ],
   imports: [
     BrowserModule,
