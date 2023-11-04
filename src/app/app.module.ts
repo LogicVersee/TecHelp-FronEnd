@@ -40,11 +40,14 @@ import {AnalyticsComponent} from "./views/analytics/analytics.component";
 import {DashboardComponent} from "./views/dashboard/dashboard.component";
 import {InventoryComponent} from "./views/inventory/inventory.component";
 import { ChartComponent } from './components/chart/chart.component';
-import {ChartModule} from "angular-highcharts";
+import {ChartModule} from 'angular-highcharts';
 import {InventoryServiceService} from "./services/inventoryService/inventory-service.service";
 import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
 import { MyProfileComponent } from './views/my-profile/my-profile.component';
 import {MembershipModule} from "./Memberships/membership.module";
+import { ListTaskComponent } from './monitoring/pages/list-task/list-task.component';
+import { ViewProgressTaskComponent } from './monitoring/pages/view-progress-task/view-progress-task.component';
+import {MonitortasksService} from "./monitoring/services/monitortasks.service";
 
 
 @NgModule({
@@ -72,7 +75,9 @@ import {MembershipModule} from "./Memberships/membership.module";
     InventoryComponent,
     ChartComponent,
     EditProfileComponent,
-    MyProfileComponent
+    MyProfileComponent,
+    ListTaskComponent,
+    ViewProgressTaskComponent
   ],
   imports: [
     BrowserModule,
@@ -115,7 +120,7 @@ import {MembershipModule} from "./Memberships/membership.module";
     ChartModule,
     MembershipModule
   ],
-  providers: [TechnicalsServiceService,TasksService,InventoryServiceService],
+  providers: [TechnicalsServiceService,TasksService,InventoryServiceService,MonitortasksService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

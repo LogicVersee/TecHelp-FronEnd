@@ -13,7 +13,8 @@ import {EditProfileComponent} from "./components/edit-profile/edit-profile.compo
 import {MyProfileComponent} from "./views/my-profile/my-profile.component";
 import {MembershipComponent} from "./Memberships/membership/membership.component";
 import {LoadingComponent} from "./Memberships/membership/page/loading/loading.component";
-
+import {ViewProgressTaskComponent} from "./monitoring/pages/view-progress-task/view-progress-task.component";
+import {ListTaskComponent} from "./monitoring/pages/list-task/list-task.component";
 
 const routes: Routes = [
   {path: 'searchTechnicals', component: SearchTechnicalComponent},
@@ -30,7 +31,9 @@ const routes: Routes = [
   {path: 'myProfile', component: MyProfileComponent},
   {path: 'edit-profile/:id', component: EditProfileComponent},
   {path: 'user/Membership',component: MembershipComponent},
-  {path: 'loading', component: LoadingComponent}
+  {path: 'loading', component: LoadingComponent},
+  {path: 'viewprogresstask/:id',component:ViewProgressTaskComponent},
+  {path:'progress',component:ListTaskComponent}
 ];
 
 @NgModule({
