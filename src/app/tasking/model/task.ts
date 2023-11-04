@@ -1,4 +1,5 @@
 export class Task {
+    technicalId:number;
     id:number;
     client_name:string;
     phone_name:string;
@@ -8,6 +9,7 @@ export class Task {
     delivery_day:string;
     income:string;
  constructor() {
+     this.technicalId=0;
  this.id=0;
  this.client_name="";
  this.phone_name="";

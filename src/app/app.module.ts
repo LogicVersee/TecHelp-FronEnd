@@ -19,11 +19,31 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { RequestComponent } from './components/request/request.component';
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import { TechProfileComponent } from './views/tech-profile/tech-profile.component';
 import { HomeComponent } from './components/home/home.component';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatTableModule} from "@angular/material/table";
+import { TaskComponent} from "./components/task/task.component";
+import {MatTooltipModule} from '@angular/material/tooltip';
+import { MatInputModule} from "@angular/material/input";
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSortModule} from '@angular/material/sort';
+import { CreateTaskComponent } from './components/task/create-task/create-task.component';
+import {MatSelectModule} from "@angular/material/select";
+import {MatLegacyChipsModule} from "@angular/material/legacy-chips";
+import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
+import { ViewTaskComponent } from './components/task/view-task/view-task.component';
+import { EditTaskComponent } from './components/task/edit-task/edit-task.component';
+import { TasksComponent } from './tasking/pages/tasks/tasks.component';
+import {TasksService} from "./tasking/services/tasks.service";
+import { TaskFormComponent } from './tasking/components/task-form/task-form.component';
+import { CreateTasksComponent } from './tasking/pages/create-tasks/create-tasks.component';
+import { ViewTasksComponent } from './tasking/pages/view-tasks/view-tasks.component';
+import { EditTasksComponent } from './tasking/pages/edit-tasks/edit-tasks.component';
+
+
 
 @NgModule({
   declarations: [
@@ -37,9 +57,17 @@ import { MatMenuModule } from '@angular/material/menu';
     SideNavToolBarComponent,
     TechProfileComponent,
     ToolbarComponent,
-
     NavigationComponent,
-    HomeComponent
+    HomeComponent,
+    TaskComponent,
+    CreateTaskComponent,
+    ViewTaskComponent,
+    EditTaskComponent,
+    TasksComponent,
+    TaskFormComponent,
+    CreateTasksComponent,
+    ViewTasksComponent,
+    EditTasksComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +80,7 @@ import { MatMenuModule } from '@angular/material/menu';
     MatListModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-
+    MatTableModule,
     MatToolbarModule,
     MatSidenavModule,
     MatButtonModule,
@@ -69,9 +97,17 @@ import { MatMenuModule } from '@angular/material/menu';
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTooltipModule,
+    MatInputModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatSelectModule,
+    MatLegacyChipsModule,
+    MatProgressSpinnerModule,
+    FormsModule
   ],
-  providers: [TechnicalsServiceService],
+  providers: [TechnicalsServiceService,TasksService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

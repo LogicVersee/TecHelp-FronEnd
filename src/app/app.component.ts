@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TecHelp-FronEnd';
+
+  options=[
+    {path:'/task',title:'Task'}
+  ]
 }

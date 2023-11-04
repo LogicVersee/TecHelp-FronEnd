@@ -12,10 +12,9 @@ import {MatSort} from "@angular/material/sort";
 })
 export class TasksComponent implements OnInit,AfterViewInit{
 
-
     taskData:Task;
     dataSource:MatTableDataSource<any>;
-    displayColumns: string[]=['id','Client´s name', 'Cellphone', 'Date', 'Actions']
+    displayColumns: string[]=['id','name', 'Cellphone', 'Date', 'Actions']
     @ViewChild(MatPaginator,{static:false}) paginator!:MatPaginator;
     @ViewChild(MatSort,{static:false}) sort!:MatSort;
     isEditMode:boolean;
@@ -45,17 +44,20 @@ export class TasksComponent implements OnInit,AfterViewInit{
       })
   }
 
-  private updateTask(){
-      let task=this.taskData;
-      this.tasksService.updateResource(task.id,task).subscribe((response:any)=>{
-          this.dataSource.data=this.dataSource.data.map((t:Task)=>{
-              if(t.id===response.id){
-                  t=response;
-              }
-              return t;
-          });
-      });
-  }
+
+    private updateTask() {
+        let student = this.taskData;
+        this.tasksService.updateResource(student.id, student).subscribe((response: any) => {
+            this.dataSource.data = this.dataSource.data.map((t: Task) => {
+                if (t.id === response.id) {
+                    t = response;
+                }
+                return t;
+            });
+        });
+    }
+
+
 
   private deleteStudent(id:number){
       this.tasksService.deleteResource(id).subscribe(()=>{
