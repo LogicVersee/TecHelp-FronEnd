@@ -44,6 +44,7 @@ import {ChartModule} from "angular-highcharts";
 import {InventoryServiceService} from "./services/inventoryService/inventory-service.service";
 import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
 import { MyProfileComponent } from './views/my-profile/my-profile.component';
+import {MembershipModule} from "./Memberships/membership.module";
 
 
 @NgModule({
@@ -111,7 +112,8 @@ import { MyProfileComponent } from './views/my-profile/my-profile.component';
     MatProgressSpinnerModule,
     FormsModule,
     MatMenuModule,
-    ChartModule
+    ChartModule,
+    MembershipModule
   ],
   providers: [TechnicalsServiceService,TasksService,InventoryServiceService],
   bootstrap: [AppComponent]

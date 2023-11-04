@@ -11,6 +11,9 @@ import {AnalyticsComponent} from "./views/analytics/analytics.component";
 import {InventoryComponent} from "./views/inventory/inventory.component";
 import {EditProfileComponent} from "./components/edit-profile/edit-profile.component";
 import {MyProfileComponent} from "./views/my-profile/my-profile.component";
+import {MembershipComponent} from "./Memberships/membership/membership.component";
+import {LoadingComponent} from "./Memberships/membership/page/loading/loading.component";
+
 
 const routes: Routes = [
   {path: 'searchTechnicals', component: SearchTechnicalComponent},
@@ -26,6 +29,8 @@ const routes: Routes = [
   {path: 'dashboard/inventory', component: InventoryComponent},
   {path: 'myProfile', component: MyProfileComponent},
   {path: 'edit-profile/:id', component: EditProfileComponent},
+  {path: 'user/Membership',component: MembershipComponent},
+  {path: 'loading', component: LoadingComponent}
 ];
 
 @NgModule({
