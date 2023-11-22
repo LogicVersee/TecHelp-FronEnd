@@ -1,0 +1,29 @@
+.btn-dashboard,
+.btn-petition,
+.btn-Task {
+    display: flex; /* Asegúrate de que los elementos usen flexbox */
+    align-items: center;
+    justify-content: center;
+    background-color: #448AFF;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+
+    margin: 0 10px 10px 0;
+    padding: 0 10px;
+    width: calc(50% - 10px); /* Distribuir en dos columnas con espacio entre ellas */
+    height: auto;
+}
+
+.btn-Task {
+    width: 100%; /* Ocupar toda la anchura en una sola fila */
+}
+
+.custom-icon {
+    font-size: 200px;
+    height: 200px;
+    width: 200px;
+    text-align: center; /* Uso correcto para centrar texto horizontalmente */
+}

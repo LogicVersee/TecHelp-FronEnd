@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "TecHelp-FronEnd": {
+    "TecHelp-FrontEnd": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/tec-help-fron-end",
+            "outputPath": "dist/tec-help-front-end",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -35,8 +35,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "3mb"
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -61,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "TecHelp-FronEnd:build:production"
+              "browserTarget": "TecHelp-FrontEnd:build:production"
             },
             "development": {
-              "browserTarget": "TecHelp-FronEnd:build:development"
+              "browserTarget": "TecHelp-FrontEnd:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "TecHelp-FronEnd:build"
+            "browserTarget": "TecHelp-FrontEnd:build"
           }
         },
         "test": {
@@ -93,18 +93,11 @@
             ],
             "scripts": []
           }
-        },
-        "deploy": {
-          "builder": "@angular/fire:deploy",
-          "options": {
-            "version": 2,
-            "browserTarget": "TecHelp-FronEnd:build:production"
-          }
         }
       }
     }
   },
   "cli": {
-    "analytics": "2f757a56-3b08-4ac2-92ad-57920382b0fa"
+    "analytics": false
   }
 }

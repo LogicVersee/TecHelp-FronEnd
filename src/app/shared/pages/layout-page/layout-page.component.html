@@ -1,0 +1,18 @@
+
+<mat-toolbar class="mat-elevation-z3" [style.background-color]="'#72B4EF'">
+  <img src="../../../../../assets/TecHelpLogo.png" alt="StudyMentor Logo" class="logo">
+  <span>TECHELP</span>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav opened mode="side"  >
+    <app-user-sidenav *ngIf="user?.role=='client'"></app-user-sidenav>
+    <app-technical-sidenav *ngIf="user?.role=='technical'"></app-technical-sidenav>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="content">
+
+    <router-outlet ></router-outlet>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
