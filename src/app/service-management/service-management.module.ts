@@ -10,9 +10,9 @@ import { SelectTechnicalComponent } from './pages/select-technical/select-techni
 import { CreateOrderDialogComponent } from './components/create-order-dialog/create-order-dialog.component';
 import { CreateRequestDialogComponent } from './components/create-request-dialog/create-request-dialog.component';
 import { ListOrdersComponent } from './pages/list-orders/list-orders.component';
-import { ViewOrderComponent } from './pages/view-order/view-order.component';
 import {MatDialogModule} from "@angular/material/dialog";
 import { ListOrdersUserComponent } from './pages/list-orders-user/list-orders-user.component';
+import { ViewOrderDialogComponent } from './components/view-order-dialog/view-order-dialog.component';
 
 
 
@@ -25,8 +25,8 @@ import { ListOrdersUserComponent } from './pages/list-orders-user/list-orders-us
     CreateOrderDialogComponent,
     CreateRequestDialogComponent,
     ListOrdersComponent,
-    ViewOrderComponent,
-    ListOrdersUserComponent
+    ListOrdersUserComponent,
+    ViewOrderDialogComponent
   ],
   imports: [
     CommonModule,
