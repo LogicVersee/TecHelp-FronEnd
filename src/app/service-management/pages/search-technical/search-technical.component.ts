@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {formatNumber} from "@angular/common";
 import {ActivatedRoute} from "@angular/router";
 import {TechnicalsService} from "../../services/technicals.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-search-technical',
@@ -13,7 +14,7 @@ export class SearchTechnicalComponent {
   maxRatingArr:any = Array(this.maxRating).fill(0);
   techs:any;
 
-  constructor(private technicalsService:TechnicalsService) {
+  constructor(private router: Router,private technicalsService:TechnicalsService) {
     this.techs = [];
   }
   numberFunc(word: string): number{
@@ -29,5 +30,9 @@ export class SearchTechnicalComponent {
 
   ngOnInit(): void {
     this.getAllTechnicals();
+  }
+
+  TechnicianProfileRoute(id: any) {
+    this.router.navigate([`home/user/profTechnical/${id}`])
   }
 }

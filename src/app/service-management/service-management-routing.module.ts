@@ -14,7 +14,7 @@ const routes: Routes = [
       {path:'user',component:HomeUserComponent},
       {path:'technical',component:HomeTechnicalComponent},
       {path:'user/technical',component:SearchTechnicalComponent},
-      {path:'user/technical/:id',component:SelectTechnicalComponent},
+      {path:'user/profTechnical/:id',component:SelectTechnicalComponent},
       {path:'**',redirectTo:'user'},
     ]
   }

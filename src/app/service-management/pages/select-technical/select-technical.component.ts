@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {TechnicalsService} from "../../services/technicals.service";
 
+
 @Component({
   selector: 'app-select-technical',
   templateUrl: './select-technical.component.html',
