@@ -11,7 +11,7 @@ import {TechnicalsService} from "../../services/technicals.service";
 export class SelectTechnicalComponent {
   maxRating = 5;
   maxRatingArr:any = Array(this.maxRating).fill(0);
-  techs:any = [];
+  tech:any;
 
   yea: string = "";
   constructor(private route: ActivatedRoute, private technicalsService:TechnicalsService) {
@@ -25,8 +25,9 @@ export class SelectTechnicalComponent {
   }
   private getTechnical(){
     let urlId = '?id=' + this.yea;
-    this.technicalsService.getById(urlId).subscribe((response:any) => {
-      this.techs = response;
+    this.technicalsService.getById(this.yea).subscribe((response:any) => {
+      this.tech = response;
+      console.log(response)
     })
   }
   ngOnInit(): void {

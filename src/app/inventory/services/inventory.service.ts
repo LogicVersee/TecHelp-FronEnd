@@ -5,11 +5,11 @@ import {HttpClient} from "@angular/common/http";
 @Injectable({
   providedIn: 'root'
 })
-export class TechnicalsService extends BaseService<boolean>{
+export class InventoryService extends BaseService<boolean>{
 
   constructor(http:HttpClient) {
     super(http);
     this.baseUrl = 'http://localhost:8080/api/v1'
-    this.resourceEndpoint='/technicals';
+    this.resourceEndpoint='/inventory'
   }
 }

@@ -12,6 +12,10 @@ const routes: Routes = [
     loadChildren:()=>import('./service-management/service-management.module').then(m=>m.ServiceManagementModule)
   },
   {
+    path: 'inventory',
+    loadChildren: ()=>import ('./inventory/inventory.module').then(m=>m.InventoryModule)
+  },
+  {
     path:'',
     redirectTo:'auth/login',
     pathMatch: 'full'

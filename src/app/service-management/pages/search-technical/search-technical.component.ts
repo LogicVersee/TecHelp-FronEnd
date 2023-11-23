@@ -24,6 +24,7 @@ export class SearchTechnicalComponent {
   private getAllTechnicals(){
     this.technicalsService.getAll().subscribe((response:any) => {
       this.techs = response;
+      console.log(response)
     })
   }
   protected readonly formatNumber = formatNumber;

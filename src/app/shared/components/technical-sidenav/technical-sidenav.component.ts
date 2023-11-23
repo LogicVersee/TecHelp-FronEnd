@@ -24,7 +24,7 @@ export class TechnicalSidenavComponent {
     {
       icon: "home",
       label:"Home",
-      route:"technical"
+      route:"home/technical"
     },
     {
       icon: "person",
@@ -39,7 +39,7 @@ export class TechnicalSidenavComponent {
     {
       icon: "dashboard",
       label:"Dashboard",
-      route:"user"
+      route:"inventory/summary"
     },
     {
       icon: "mail",
@@ -60,8 +60,9 @@ export class TechnicalSidenavComponent {
       this.securityService.logout();
       this.router.navigate([`auth/${name}`]);
       console.log(name)
-    }else{
-      this.router.navigate([`home/${name}`]);
+    }
+    else{
+      this.router.navigate([`${name}`]);
     }
 
   }
