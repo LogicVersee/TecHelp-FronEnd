@@ -5,6 +5,8 @@ import {HomeUserComponent} from "./pages/home-user/home-user.component";
 import {HomeTechnicalComponent} from "./pages/home-technical/home-technical.component";
 import {SearchTechnicalComponent} from "./pages/search-technical/search-technical.component";
 import {SelectTechnicalComponent} from "./pages/select-technical/select-technical.component";
+import {ListOrdersComponent} from "./pages/list-orders/list-orders.component";
+import {ViewOrderComponent} from "./pages/view-order/view-order.component";
 
 const routes: Routes = [
   {
@@ -15,6 +17,8 @@ const routes: Routes = [
       {path:'technical',component:HomeTechnicalComponent},
       {path:'user/technical',component:SearchTechnicalComponent},
       {path:'user/technical/:id',component:SelectTechnicalComponent},
+      {path:'task',component:ListOrdersComponent},
+      {path:'task/details',component:ViewOrderComponent},
       {path:'**',redirectTo:'user'},
     ]
   }

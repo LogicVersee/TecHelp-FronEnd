@@ -8,9 +8,7 @@
       "password": "12345678",
       "role": "client"
     }
-
   ],
-
   "technicals": [
     {
       "id": 1,
@@ -19,7 +17,7 @@
       "address": "Av. Bananos 456",
       "city": "Lima",
       "experience": "4 - 5 years",
-      "photo":"https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
+      "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
       "description": "Soy tecnico desde hace 5 años y tengo un puesto en Surco",
       "ranking": "3",
       "favourite": "false"
@@ -31,7 +29,7 @@
       "address": "Av. Moreras 789",
       "city": "Lima",
       "experience": "1 - 3 years",
-      "photo":"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
+      "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
       "description": "Soy tecnico desde hace 4 años y tengo un puesto en La Victoria",
       "ranking": "4",
       "favourite": "false"
@@ -43,7 +41,7 @@
       "address": "Av. Cocos 345",
       "city": "Lima",
       "experience": "2 - 4 years",
-      "photo":"https://media.licdn.com/dms/image/C4D03AQHXIzXoZBgYoQ/profile-displayphoto-shrink_800_800/0/1607395689181?e=2147483647&v=beta&t=vNlzJ2k53Q2txzFQ7CE9Sd41Pgyl--iLLGiINe1lGao",
+      "photo": "https://media.licdn.com/dms/image/C4D03AQHXIzXoZBgYoQ/profile-displayphoto-shrink_800_800/0/1607395689181?e=2147483647&v=beta&t=vNlzJ2k53Q2txzFQ7CE9Sd41Pgyl--iLLGiINe1lGao",
       "description": "I deliver my costumer devices early",
       "ranking": "5",
       "favourite": "false"
@@ -55,7 +53,7 @@
       "address": "Av. Manzanos 345",
       "city": "Lima",
       "experience": "2 - 4 years",
-      "photo":"https://i.pinimg.com/originals/ae/ec/c2/aeecc22a67dac7987a80ac0724658493.jpg",
+      "photo": "https://i.pinimg.com/originals/ae/ec/c2/aeecc22a67dac7987a80ac0724658493.jpg",
       "description": "I'm new in repairing phones, but I always deliver early'",
       "ranking": "2",
       "favourite": "false"
@@ -64,19 +62,47 @@
   "incomes": [
     {
       "id": 1,
-      "incomePerWeekend": [56.70,45.80,12.90,13.40,100.90,70.20]
+      "incomePerWeekend": [
+        56.7,
+        45.8,
+        12.9,
+        13.4,
+        100.9,
+        70.2
+      ]
     },
     {
       "id": 2,
-      "incomePerWeekend": [56.70,45.80,12.90,13.40,100.90,70.20]
+      "incomePerWeekend": [
+        56.7,
+        45.8,
+        12.9,
+        13.4,
+        100.9,
+        70.2
+      ]
     },
     {
       "id": 3,
-      "incomePerWeekend": [56.70,45.80,12.90,13.40,100.90,70.20]
+      "incomePerWeekend": [
+        56.7,
+        45.8,
+        12.9,
+        13.4,
+        100.9,
+        70.2
+      ]
     },
     {
       "id": 4,
-      "incomePerWeekend": [56.70,45.80,12.90,13.40,100.90,70.20]
+      "incomePerWeekend": [
+        56.7,
+        45.8,
+        12.9,
+        13.4,
+        100.9,
+        70.2
+      ]
     }
   ],
   "inventories": [
@@ -87,22 +113,72 @@
         {
           "item": "Screens motoG20",
           "amount": 10,
-          "price": 20.00
+          "price": 20
         },
         {
           "item": "Battery Samsung A22",
           "amount": 2,
-          "price": 45.00
+          "price": 45
         },
         {
           "item": "Panel Samsung A22",
           "amount": 5,
-          "price": 30.00
+          "price": 30
         }
       ]
     }
   ],
   "my-profile": [
+    {
+      "id": 1,
+      "name": "Jos",
+      "lastName": "Cueva",
+      "address": "Av. San Juan",
+      "city": "Lima",
+      "experience": "4 - 5 years",
+      "photo": "https://elcomercio.pe/resizer/Fiioo9mqCbjvpsD_5GFUBW3YwP8=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/URN565XOQVC5HGNYPHOSPOZALA.jpg",
+      "description": "Soy tecnico desde hace 5 años",
+      "ranking": "5",
+      "favourite": "false",
+      "price": "50"
+    }
+  ],
+  "order": [
+    {
+      "id": 1,
+      "name": "Jos",
+      "lastName": "Cueva",
+      "address": "Av. San Juan",
+      "city": "Lima",
+      "experience": "4 - 5 years",
+      "photo": "https://elcomercio.pe/resizer/Fiioo9mqCbjvpsD_5GFUBW3YwP8=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/URN565XOQVC5HGNYPHOSPOZALA.jpg",
+      "description": "Soy tecnico desde hace 5 años",
+      "ranking": "5",
+      "favourite": "false",
+      "price": "50"
+    },
+    {
+      "client_name": "Luis",
+      "phone_name": "Motorola",
+      "problem": "problemas",
+      "components_to_use": "papitas",
+      "value_progress": "Undone",
+      "delivery_day": "2023-11-04T05:00:00.000Z",
+      "income": 55,
+      "id": 2
+    },
+    {
+      "client_name": "Pedro",
+      "phone_name": "mnin",
+      "problem": "ah",
+      "components_to_use": "Hola",
+      "value_progress": "Undone",
+      "delivery_day": "2023-11-10T05:00:00.000Z",
+      "income": 55,
+      "id": 3
+    }
+  ],
+  "request": [
     {
       "id": 1,
       "name": "Jos",

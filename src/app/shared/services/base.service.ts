@@ -52,5 +52,9 @@ export class BaseService<T> {
     return this.http.get<T>(`${this.resourcePath()}/${id}`,  this.httpOptions);
   }
 
+  post(data:any){
+    return this.http.post<any>(this.resourcePath(),data)
+  }
+
 
 }

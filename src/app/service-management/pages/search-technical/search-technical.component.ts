@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {formatNumber} from "@angular/common";
 import {ActivatedRoute} from "@angular/router";
-import {TechnicalsService} from "../../services/technicals.service";
+import {TechnicalsService} from "../../services/technician/technicals.service";
 
 @Component({
   selector: 'app-search-technical',

@@ -7,6 +7,12 @@ import { HomeTechnicalComponent } from './pages/home-technical/home-technical.co
 import {SharedModule} from "../shared/shared.module";
 import { SearchTechnicalComponent } from './pages/search-technical/search-technical.component';
 import { SelectTechnicalComponent } from './pages/select-technical/select-technical.component';
+import { CreateOrderDialogComponent } from './components/create-order-dialog/create-order-dialog.component';
+import { CreateRequestDialogComponent } from './components/create-request-dialog/create-request-dialog.component';
+import { ListOrdersComponent } from './pages/list-orders/list-orders.component';
+import { ViewOrderComponent } from './pages/view-order/view-order.component';
+import {MatDialogModule} from "@angular/material/dialog";
+
 
 
 @NgModule({
@@ -14,12 +20,19 @@ import { SelectTechnicalComponent } from './pages/select-technical/select-techni
     HomeUserComponent,
     HomeTechnicalComponent,
     SearchTechnicalComponent,
-    SelectTechnicalComponent
+    SelectTechnicalComponent,
+    CreateOrderDialogComponent,
+    CreateRequestDialogComponent,
+    ListOrdersComponent,
+    ViewOrderComponent
   ],
   imports: [
     CommonModule,
     ServiceManagementRoutingModule,
-    SharedModule
+    SharedModule,
+    MatDialogModule,
+
+
   ]
 })
 export class ServiceManagementModule { }
