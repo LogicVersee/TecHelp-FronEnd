@@ -9,7 +9,7 @@ export class TechnicalsService extends BaseService<boolean>{
 
   constructor(http:HttpClient) {
     super(http);
-    this.baseUrl = 'http://localhost:8080/api/v1'
+    this.baseUrl = 'https://techelp-center-platform.zeabur.app/api/v1'
     this.resourceEndpoint='/technicals';
   }
 }
