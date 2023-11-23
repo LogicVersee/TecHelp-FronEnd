@@ -28,13 +28,16 @@ export class LoginPageComponent implements OnInit {
     this.securityService.login(this.myform.controls['email'].value,this.myform.controls['password'].value)
       .subscribe(response =>{
 
-        if(this.user?.role=="technical"){
+        //types: string[] = ["ROLE_TECHNICIAN","ROLE_USER"]
+        if(this.user?.role=="ROLE_TECHNICIAN"){
           this.router.navigate([`home/technical`]);
-        }else if(this.user?.role=="client"){
+        }else if(this.user?.role=="ROLE_USER"){
           this.router.navigate([`home/user`]);
         }
 
       });
+    console.log(this.user)
+
 
 
   }

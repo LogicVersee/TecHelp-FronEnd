@@ -23,12 +23,12 @@ export class UserSidenavComponent {
     {
       icon: "home",
       label:"Home",
-      route:"user"
+      route:"home/user"
     },
     {
       icon: "engineering",
       label:"Technical",
-      route:"user/technical"
+      route:"home/user/technical"
     },
     {
       icon: "donut_large",
@@ -60,7 +60,7 @@ export class UserSidenavComponent {
       this.router.navigate([`auth/${name}`]);
       console.log(name)
     }else{
-      this.router.navigate([`home/${name}`]);
+      this.router.navigate([`${name}`]);
     }
 
   }

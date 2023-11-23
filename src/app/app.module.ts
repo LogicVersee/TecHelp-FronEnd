@@ -8,9 +8,11 @@ import {SharedModule} from "./shared/shared.module";
 import {SecurityModule} from "./security/security.module";
 
 
+
 @NgModule({
   declarations: [
     AppComponent
+
   ],
   imports: [
     BrowserModule,

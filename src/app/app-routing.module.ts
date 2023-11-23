@@ -12,6 +12,10 @@ const routes: Routes = [
     loadChildren:()=>import('./service-management/service-management.module').then(m=>m.ServiceManagementModule)
   },
   {
+    path:'profile',
+    loadChildren:()=>import('./profile/profile.module').then(m=>m.ProfileModule)
+  },
+  {
     path:'',
     redirectTo:'auth/login',
     pathMatch: 'full'
