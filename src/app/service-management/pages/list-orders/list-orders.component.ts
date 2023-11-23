@@ -27,7 +27,7 @@ export class ListOrdersComponent implements OnInit{
       width:'30%'
     }).afterClosed().subscribe(value =>
     {
-      if(value=='add'){
+      if(value =='Add'){
         this.getOrders();
       }
     })
@@ -63,7 +63,7 @@ export class ListOrdersComponent implements OnInit{
       data:row
     }).afterClosed().subscribe(value =>
     {
-      if(value=='update'){
+      if(value =='update'){
         this.getOrders();
       }
     })

@@ -48,11 +48,13 @@ export class CreateOrderDialogComponent implements OnInit{
               alert("Order created successfully");
               this.orderForm.reset();
               this.dialogRef.close('Add');
+
             },
             error:()=>{
               alert("Error while adding the order")
             }
           })
+
       }
     }else {
       this.updateOrder()
