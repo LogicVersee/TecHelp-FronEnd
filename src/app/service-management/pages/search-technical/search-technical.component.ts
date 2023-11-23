@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import {formatNumber} from "@angular/common";
 import {ActivatedRoute} from "@angular/router";
-import {TechnicalsService} from "../../services/technicals.service";
+import {TechnicalsService} from "../../services/technician/technicals.service";
 import {Router} from "@angular/router";
-
 @Component({
   selector: 'app-search-technical',
   templateUrl: './search-technical.component.html',

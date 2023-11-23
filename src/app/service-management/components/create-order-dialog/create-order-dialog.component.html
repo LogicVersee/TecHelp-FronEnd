@@ -1,0 +1,42 @@
+<h1 mat-dialog-title>Add order form</h1>
+<div mat-dialog-content>
+  <form [formGroup]="orderForm">
+    <mat-form-field>
+      <mat-label>Client Name</mat-label>
+      <input formControlName="client_name" matInput>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Brand's Phone</mat-label>
+      <input formControlName="phone_name" matInput>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Components</mat-label>
+      <input  formControlName="components_to_use" matInput>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Problem</mat-label>
+      <input  formControlName="problem" matInput>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Choose a date</mat-label>
+      <input formControlName="delivery_day" matInput [matDatepicker]="picker">
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field floatLabel="always">
+      <mat-label>Income</mat-label>
+      <input formControlName="income"  matInput type="number" placeholder="0">
+      <span matTextPrefix>s/&nbsp;</span>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Progress</mat-label>
+      <input formControlName="value_progress"  matInput type="number" placeholder="0">
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+  <button mat-raised-button color="primary" (click)="addOrder()">{{actionbtn}}</button>
+</div>
+

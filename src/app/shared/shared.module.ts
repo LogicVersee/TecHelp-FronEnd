@@ -75,7 +75,7 @@ import {MatDialogModule} from "@angular/material/dialog";
     MatListModule,
     MatCardModule,
     MatGridListModule,
-
+    MatNativeDateModule,
     MatIconModule,
     MatToolbarModule,
     MatButtonModule,
