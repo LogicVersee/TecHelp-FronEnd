@@ -16,6 +16,10 @@ const routes: Routes = [
     loadChildren: ()=>import ('./inventory/inventory.module').then(m=>m.InventoryModule)
   },
   {
+    path:'profile',
+    loadChildren:()=>import('./profile/profile.module').then(m=>m.ProfileModule)
+  },
+  {
     path:'',
     redirectTo:'auth/login',
     pathMatch: 'full'

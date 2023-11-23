@@ -11,11 +11,9 @@ import {SecurityService} from "../../services/security.service";
   styleUrls: ['./sign-in-page.component.css']
 })
 export class SignInPageComponent {
-  private newUser: User|undefined;
 
-  types: string[] = [
-    "technical", "client"
-  ]
+
+  types: string[] = ["ROLE_TECHNICIAN","ROLE_USER"]
   constructor(private formBuilder: FormBuilder,
               private router:Router,
               private securityService:SecurityService){
@@ -33,17 +31,62 @@ export class SignInPageComponent {
   addUser(){
     //this.newUser.id=0;
 
+    if(this.registerForm.invalid)return;
 
-    if(this.registerForm.invalid)return;/*
-    this.newUser.email=this.registerForm.value.email;
-    this.newUser.name=this.registerForm.value.firstName;
-    this.newUser.password=this.registerForm.value.password;
-    this.newUser.lastName=this.registerForm.value.paternalSurname + " " + this.registerForm.value.maternalSurname;
-    this.newUser.role=this.registerForm.value.type;*/
+      const newuser= {
+        username: this.registerForm.controls['email'].value,
+        password: this.registerForm.controls['password'].value,
+        roles:[this.registerForm.controls['type'].value]
+      }
+
+
+      //Agrega a la tabla tecnicos
+      if(newuser.roles[0] =="ROLE_TECHNICIAN"){
+        console.log("tecnico creado");
+
+        console.log(newuser);
+        this.securityService.signupUser(newuser).subscribe(response=>{
+          console.log(response);
+
+        })
+
+
+        const newTechnician={
+          name:this.registerForm.controls['firstName'].value,
+          lastName:this.registerForm.controls['paternalSurname'].value+" "+this.registerForm.controls['maternalSurname'].value,
+          phone:"000000000",
+          address:"address",
+          city:"city",
+          experience:"experience",
+          photo:"photo",
+          email:newuser.username,
+          password: newuser.password,
+          description:"description",
+        }
+
+        this.securityService.signupTechnician(newTechnician).subscribe(response=>{
+          console.log(response);
+          this.router.navigate(['auth/login']);
+        });
+
+        //Agrega un usuario de tipo tecnico
 
 
 
-    console.log(this.newUser);
+
+      }else if(newuser.roles[0] == "ROLE_USER"){
+
+        console.log(newuser);
+        this.securityService.signupUser(newuser).subscribe(response=>{
+          console.log(response);
+
+        })
+        this.router.navigate(['auth/login']);
+      }
+
+
+
+
     console.log("=====")
     /*this.securityService.signinUser(this.newUser).subscribe(response=>{
 
@@ -51,7 +94,7 @@ export class SignInPageComponent {
 
       this.registerForm.reset();
 
-      this.router.navigate(['security/login']);*/
+      */
 
   }
 

@@ -6,10 +6,9 @@
 
 <mat-sidenav-container>
   <mat-sidenav opened mode="side"  >
-    <app-user-sidenav *ngIf="user?.role=='client'"></app-user-sidenav>
-    <app-technical-sidenav *ngIf="user?.role=='technical'"></app-technical-sidenav>
+    <app-user-sidenav *ngIf="user?.role=='ROLE_USER'"></app-user-sidenav>
+    <app-technical-sidenav *ngIf="user?.role=='ROLE_TECHNICIAN'"></app-technical-sidenav>
   </mat-sidenav>
-
   <mat-sidenav-content class="content">
 
     <router-outlet ></router-outlet>

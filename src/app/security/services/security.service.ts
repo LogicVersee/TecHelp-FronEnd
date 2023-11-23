@@ -13,7 +13,7 @@ export class SecurityService extends BaseService<boolean>{
   private userAndTechnical?:User;
   constructor(http:HttpClient) {
     super(http);
-    this.resourceEndpoint='/users';
+    this.resourceEndpoint='/authentication';
   }
 
   get currentUser():User|undefined{
@@ -34,23 +34,31 @@ export class SecurityService extends BaseService<boolean>{
       )
   }
 
-  signinUser(user:User):Observable<boolean>{
+  signupUser(newuser:any):Observable<boolean>{
 
-    return this.http.post<User>(`${this.baseUrl}${this.resourceEndpoint}`,user,this.httpOptions)
+    return this.http.post<any>(`${this.baseUrl}${this.resourceEndpoint}/sign-up`,newuser,this.httpOptions)
       .pipe(
-       tap(user=>this.userAndTechnical=user),
+        tap(response=>console.log(response)),
         map(()=>true)
       )
 
   }
+  signupTechnician(newuser:any):Observable<boolean>{
+    return this.http.post<any>(`${this.baseUrl}${this.resourceEndpoint}/sign-up/technical`,newuser,this.httpOptions)
+      .pipe(
+        tap(response=>console.log(response)),
+        map(()=>true)
+      )
+  }
 
 
-  login(email:string,password:string):Observable<boolean>{
+  login(username:string,password:string):Observable<boolean>{
     //cambiar por un post
-    return this.http.get<any>(`${this.baseUrl}${this.resourceEndpoint}/1`,this.httpOptions)
+    const userCredentials = {username:username,password:password};
+    return this.http.post<User>(`${this.baseUrl}${this.resourceEndpoint}/sign-in`, userCredentials,this.httpOptions )
       .pipe(
         tap(response=>this.userAndTechnical= response),
-        tap(response => localStorage.setItem('token',response.id)),
+        tap(response => localStorage.setItem('token',response.token)),
         map(()=>true)
       )
 

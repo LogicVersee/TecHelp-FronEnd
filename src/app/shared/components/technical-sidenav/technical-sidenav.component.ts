@@ -29,7 +29,7 @@ export class TechnicalSidenavComponent {
     {
       icon: "person",
       label:"Profile",
-      route:"user"
+      route:"profile/edit-technical"
     },
     {
       icon: "task",
@@ -60,8 +60,8 @@ export class TechnicalSidenavComponent {
       this.securityService.logout();
       this.router.navigate([`auth/${name}`]);
       console.log(name)
-    }
-    else{
+    } else{
+      console.log(name)
       this.router.navigate([`${name}`]);
     }
 

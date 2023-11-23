@@ -9,9 +9,11 @@ import {SecurityModule} from "./security/security.module";
 import {InventoryModule} from "./inventory/inventory.module";
 
 
+
 @NgModule({
   declarations: [
     AppComponent
+
   ],
   imports: [
     BrowserModule,

@@ -7,12 +7,13 @@ import {catchError, Observable, retry, throwError} from "rxjs";
 })
 export class BaseService<T> {
 
-  baseUrl: string =' http://localhost:3000';
+  baseUrl: string ='http://localhost:8080/api/v1';
   resourceEndpoint: string ='/resources';
 
   httpOptions = {
     headers: new HttpHeaders({
       'Content-type': 'application/json',
+
     })
   }
   constructor(protected http: HttpClient) { }
