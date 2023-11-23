@@ -3,6 +3,8 @@ import {MatTableDataSource} from "@angular/material/table";
 import {MatPaginator} from "@angular/material/paginator";
 import {MatSort} from "@angular/material/sort";
 import {OrderService} from "../../services/order/order.service";
+import {Router} from "@angular/router";
+import {MatDialog} from "@angular/material/dialog";
 
 
 @Component({
@@ -18,7 +20,7 @@ export class ListOrdersUserComponent implements OnInit{
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
-  constructor(private orderviewService: OrderService) {
+  constructor(private router: Router, private orderviewService: OrderService, private dialog: MatDialog) {
   }
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
@@ -44,6 +46,10 @@ export class ListOrdersUserComponent implements OnInit{
         }
       }
     )
+  }
+
+  taskdetailsRoute(id: any) {
+    this.router.navigate([`home/user/task/${id}`])
   }
 
   ngOnInit(): void {

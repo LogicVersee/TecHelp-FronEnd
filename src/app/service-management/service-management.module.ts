@@ -12,7 +12,8 @@ import { CreateRequestDialogComponent } from './components/create-request-dialog
 import { ListOrdersComponent } from './pages/list-orders/list-orders.component';
 import {MatDialogModule} from "@angular/material/dialog";
 import { ListOrdersUserComponent } from './pages/list-orders-user/list-orders-user.component';
-import { ViewOrderDialogComponent } from './components/view-order-dialog/view-order-dialog.component';
+
+import { ViewOrderUserComponent } from './pages/view-order-user/view-order-user.component';
 
 
 
@@ -26,7 +27,7 @@ import { ViewOrderDialogComponent } from './components/view-order-dialog/view-or
     CreateRequestDialogComponent,
     ListOrdersComponent,
     ListOrdersUserComponent,
-    ViewOrderDialogComponent
+    ViewOrderUserComponent
   ],
   imports: [
     CommonModule,

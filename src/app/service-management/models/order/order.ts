@@ -5,7 +5,7 @@ export interface Order{
   phone_name:string;
   problem:string;
   components_to_use:string;
-  value_progress:string;
+  value_progress:number;
   delivery_day:Date;
   income:string;
 }

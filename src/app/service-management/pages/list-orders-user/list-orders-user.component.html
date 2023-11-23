@@ -33,9 +33,9 @@
         <ng-container matColumnDef="actions">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Actions </th>
           <td mat-cell *matCellDef="let row">
-            <button mat-icon-button color="primary" >
-              <mat-icon >remove_red_eye</mat-icon>
-            </button>
+            <a class="pointer" (click)="taskdetailsRoute(row.id)" style="color: #72B4EF" matTooltip="See task's details">
+              <mat-icon>search</mat-icon>
+            </a>
 
           </td>
         </ng-container>
