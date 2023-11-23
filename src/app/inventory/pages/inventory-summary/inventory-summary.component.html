@@ -1,0 +1,19 @@
+<p>inventory-summary works!</p>
+<div class="inventory">
+  <h2><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="work"></mat-icon>Inventory</h2>
+  <div class="items">
+    <div class = "column">
+      <h2>Components</h2>
+      <p *ngFor="let item of items">
+        {{item.name}}
+      </p>
+    </div>
+    <div class = "column">
+      <h2>Amount</h2>
+      <p *ngFor="let item of items">
+        {{item.quantity}}
+      </p>
+    </div>
+  </div>
+  <mat-icon class="edit" (click)="goToItems()">edit</mat-icon>
+</div>
