@@ -7,6 +7,7 @@ import {MatSort, MatSortModule} from '@angular/material/sort';
 import {MatTableDataSource, MatTableModule} from '@angular/material/table';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {CreateRequestDialogComponent} from "../../components/create-request-dialog/create-request-dialog.component";
 
 @Component({
   selector: 'app-list-orders',
@@ -77,6 +78,12 @@ export class ListOrdersComponent implements OnInit{
       error:()=>{
         alert('Error while deleting an Order')
       }
+    })
+  }
+
+  openDialogs(){
+    this.dialog.open(CreateRequestDialogComponent,{
+      width:'30%'
     })
   }
 
