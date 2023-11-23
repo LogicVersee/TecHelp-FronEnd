@@ -25,7 +25,12 @@ export class ListOrdersComponent implements OnInit{
   openDialog(){
     this.dialog.open(CreateOrderDialogComponent,{
       width:'30%'
-    });
+    }).afterClosed().subscribe(value =>
+    {
+      if(value=='add'){
+        this.getOrders();
+      }
+    })
   }
 
   getOrders(){
@@ -56,6 +61,22 @@ export class ListOrdersComponent implements OnInit{
     this.dialog.open(CreateOrderDialogComponent,{
       width:'30%',
       data:row
+    }).afterClosed().subscribe(value =>
+    {
+      if(value=='update'){
+        this.getOrders();
+      }
+    })
+  }
+  deleteOrder(id:number){
+    this.orderService.deleteResource(id).subscribe({
+      next:(res)=>{
+        alert('Order Deleted Successfully');
+        this.getOrders();
+      },
+      error:()=>{
+        alert('Error while deleting an Order')
+      }
     })
   }
 

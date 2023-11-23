@@ -38,7 +38,7 @@ export class BaseService<T> {
       .pipe(retry(2),catchError(this.handleError));
   }
 
-  updateResource(id:any,item:any):Observable<T>{
+  updateResource(item:any,id:any):Observable<T>{
     return this.http.put<T>(`${this.resourcePath()}/${id}`,JSON.stringify(item), this.httpOptions)
       .pipe(retry(2),catchError(this.handleError));
   }

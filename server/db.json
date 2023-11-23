@@ -145,19 +145,6 @@
   ],
   "order": [
     {
-      "id": 1,
-      "name": "Jos",
-      "lastName": "Cueva",
-      "address": "Av. San Juan",
-      "city": "Lima",
-      "experience": "4 - 5 years",
-      "photo": "https://elcomercio.pe/resizer/Fiioo9mqCbjvpsD_5GFUBW3YwP8=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/URN565XOQVC5HGNYPHOSPOZALA.jpg",
-      "description": "Soy tecnico desde hace 5 años",
-      "ranking": "5",
-      "favourite": "false",
-      "price": "50"
-    },
-    {
       "client_name": "Luis",
       "phone_name": "Motorola",
       "problem": "problemas",
@@ -168,7 +155,7 @@
       "id": 2
     },
     {
-      "client_name": "Pedro",
+      "client_name": "Luis",
       "phone_name": "mnin",
       "problem": "ah",
       "components_to_use": "Hola",
@@ -176,6 +163,26 @@
       "delivery_day": "2023-11-10T05:00:00.000Z",
       "income": 55,
       "id": 3
+    },
+    {
+      "client_name": "Luis",
+      "phone_name": "Phone",
+      "problem": "patata ",
+      "components_to_use": "uno dos tres",
+      "value_progress": "Undone",
+      "delivery_day": "2023-11-10T05:00:00.000Z",
+      "income": 50,
+      "id": 4
+    },
+    {
+      "client_name": "Federico",
+      "phone_name": "Phone",
+      "problem": "patata ",
+      "components_to_use": "uno dos tres",
+      "value_progress": "Done",
+      "delivery_day": "2023-11-10T05:00:00.000Z",
+      "income": 50,
+      "id": 5
     }
   ],
   "request": [
